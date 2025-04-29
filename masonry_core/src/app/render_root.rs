@@ -433,7 +433,7 @@ impl RenderRoot {
         self.global_state
             .font_context
             .collection
-            .register_fonts(data)
+            .register_fonts(data.into(), None)
     }
 
     /// Redraw the window.

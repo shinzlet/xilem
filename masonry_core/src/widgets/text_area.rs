@@ -975,7 +975,7 @@ impl<const EDITABLE: bool> Widget for TextArea<EDITABLE> {
                     transform,
                     palette::css::STEEL_BLUE,
                     None,
-                    &rect,
+                    &rect.0,
                 );
             }
             if let Some(cursor) = self.editor.cursor_geometry(1.5) {
